@@ -1,0 +1,14 @@
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\bin\Debug\netcoreapp2.1\senai.peoples.WebApi.deps.json
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\bin\Debug\netcoreapp2.1\senai.peoples.WebApi.runtimeconfig.json
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\bin\Debug\netcoreapp2.1\senai.peoples.WebApi.runtimeconfig.dev.json
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\bin\Debug\netcoreapp2.1\senai.peoples.WebApi.dll
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\obj\Debug\netcoreapp2.1\senai.peoples.WebApi.csprojAssemblyReference.cache
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\obj\Debug\netcoreapp2.1\senai.peoples.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\obj\Debug\netcoreapp2.1\senai.peoples.WebApi.RazorAssemblyInfo.cache
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\obj\Debug\netcoreapp2.1\senai.peoples.WebApi.RazorAssemblyInfo.cs
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\obj\Debug\netcoreapp2.1\senai.peoples.WebApi.AssemblyInfoInputs.cache
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\obj\Debug\netcoreapp2.1\senai.peoples.WebApi.AssemblyInfo.cs
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\obj\Debug\netcoreapp2.1\senai.peoples.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\bin\Debug\netcoreapp2.1\senai.peoples.WebApi.pdb
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\obj\Debug\netcoreapp2.1\senai.peoples.WebApi.dll
+C:\Users\44994599823\Desktop\senai_backend\empresa_peoples\senai.peoples.WebApi\senai.peoples.WebApi\obj\Debug\netcoreapp2.1\senai.peoples.WebApi.pdb
