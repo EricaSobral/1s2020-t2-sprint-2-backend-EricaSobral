@@ -25,7 +25,7 @@ namespace senai.peoples.WebApi.Controller
         }
 
         [HttpGet]
-        public IEnumerable<FuncionarioDomain> Get()
+        public List<FuncionarioDomain> Get()
         {
             return _funcionarioRepository.Listar();
         }

@@ -10,7 +10,7 @@ namespace senai.peoples.WebApi.Repository
 {
     public class FuncionarioRepository : IFuncionarioRepository
     {
-        public string stringConexao = "DataSource=DEV14\\SQLEXPRESS; initial catalog=M_Peoples; user Id=sa; pwd=sa@132";
+        private string stringConexao = "DataSource=DEV14\\SQLEXPRESS; initial catalog=M_Peoples; user Id=sa; pwd=sa@132";
 
         public void AtualizarFuncionarioCad(FuncionarioDomain funcionario)
         {
@@ -120,7 +120,7 @@ namespace senai.peoples.WebApi.Repository
             }
         }
 
-        List<FuncionarioDomain> IFuncionarioRepository.Listar()
+        List<FuncionarioDomain> Listar()
         {
             List<FuncionarioDomain> funcionario = new List<FuncionarioDomain>();
 
