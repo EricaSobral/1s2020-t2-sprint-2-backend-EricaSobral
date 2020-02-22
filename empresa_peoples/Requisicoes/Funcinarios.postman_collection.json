@@ -39,7 +39,7 @@
 			"response": []
 		},
 		{
-			"name": "Post  cadastrar novo funcionario",
+			"name": "Cadastrar novo funcionario",
 			"request": {
 				"method": "POST",
 				"header": [
