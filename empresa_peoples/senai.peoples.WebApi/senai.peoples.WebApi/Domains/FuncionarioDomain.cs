@@ -10,5 +10,6 @@ namespace senai.peoples.WebApi.Domains
         public int id_funcionario { get; set; }
 
         public string Nome { get; set; }
+        public string Sobrenome { get; set; }
     }
 }

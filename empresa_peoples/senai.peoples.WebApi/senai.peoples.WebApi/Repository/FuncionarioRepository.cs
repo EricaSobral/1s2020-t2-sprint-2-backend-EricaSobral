@@ -6,25 +6,31 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
+
+
+
 namespace senai.peoples.WebApi.Repository
 {
     public class FuncionarioRepository : IFuncionarioRepository
+
     {
-        private string stringConexao = "DataSource=DEV14\\SQLEXPRESS; initial catalog=M_Peoples; user Id=sa; pwd=sa@132";
+
+        private string stringConexao = "Data Source=.\\SQLEXPRESS; initial catalog=M_Peoples; Integrated Security=True;";
 
         public void AtualizarFuncionarioCad(FuncionarioDomain funcionario)
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
                 
-                string queryUpdate = "UPDATE Funcionario SET Nome = @Nome WHERE id_funcionario = @ID";
+                string queryUpdate = "UPDATE Funcionario SET Nome = @Nome, Sobrenome = @Sobrenome WHERE id_funcionario = @ID";
 
      
                 using (SqlCommand cmd = new SqlCommand(queryUpdate, con))
                 {
                     cmd.Parameters.AddWithValue("@ID", funcionario.id_funcionario);
                     cmd.Parameters.AddWithValue("@Nome", funcionario.Nome);
-                                       
+                    cmd.Parameters.AddWithValue("@Sobrenome", funcionario.Sobrenome);
+
                     con.Open();
                                  
                     cmd.ExecuteNonQuery();
@@ -36,13 +42,14 @@ namespace senai.peoples.WebApi.Repository
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string queryUpdate = "UPDATE Funcionario SET Nome = @Nome WHERE id_funcionario = @ID";
+                string queryUpdate = "UPDATE Funcionario SET Nome = @Nome, " + "Sobrenome = @Sobrenome WHERE id_funcionario = @ID";
 
 
                 using (SqlCommand cmd = new SqlCommand(queryUpdate, con))
                 {
-                    cmd.Parameters.AddWithValue("@ID", funcionario.id_funcionario);
+                    cmd.Parameters.AddWithValue("@ID", id);
                     cmd.Parameters.AddWithValue("@Nome", funcionario.Nome);
+                    cmd.Parameters.AddWithValue("@Sobrenome", funcionario.Sobrenome);
 
                     con.Open();
 
@@ -56,7 +63,7 @@ namespace senai.peoples.WebApi.Repository
          
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string querySelectById = "SELECT id_funcionario, Nome FROM Funcionario WHERE id_funcionario = @ID";
+                string querySelectById = "SELECT id_funcionario, Nome, Sobrenome FROM Funcionario WHERE id_funcionario = @ID";
 
                 con.Open();
 
@@ -76,7 +83,9 @@ namespace senai.peoples.WebApi.Repository
                           
                             id_funcionario = Convert.ToInt32(rdr["id_funcionario"]),
 
-                            Nome = rdr["Nome"].ToString()
+                            Nome = rdr["Nome"].ToString(),
+
+                            Sobrenome = rdr ["Sobrenome"].ToString()
                         };
 
                         return funcionario;
@@ -91,11 +100,12 @@ namespace senai.peoples.WebApi.Repository
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string queryInsert = "INSERT INTO Funcionario (Nome) VALUES (@Nome)";
+                string queryInsert = "INSERT INTO Funcionario (Nome, Sobrenome) VALUES (@Nome, @Sobrenome)";
 
                 SqlCommand cmd = new SqlCommand(queryInsert, con);
 
                 cmd.Parameters.AddWithValue("@Nome", funcionario.Nome);
+                cmd.Parameters.AddWithValue("@Sobrenome", funcionario.Sobrenome);
 
                 con.Open();
 
@@ -107,7 +117,7 @@ namespace senai.peoples.WebApi.Repository
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-              string queryDelete = "DELETE FROM Funcionarios WHERE id_funcionario = @ID";
+              string queryDelete = "DELETE FROM Funcionario WHERE id_funcionario = @ID";
 
                using (SqlCommand cmd = new SqlCommand(queryDelete, con))
                {
@@ -120,13 +130,13 @@ namespace senai.peoples.WebApi.Repository
             }
         }
 
-        List<FuncionarioDomain> Listar()
-        {
-            List<FuncionarioDomain> funcionario = new List<FuncionarioDomain>();
-
+         public List<FuncionarioDomain> Listar()
+            {
+            List<FuncionarioDomain> funcionarios = new List<FuncionarioDomain>();
+            
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                string querySelectAll = "SELECT idfuncionario, Nome from Funcionario";
+                string querySelectAll = "SELECT id_funcionario, Nome, Sobrenome from Funcionario";
 
                 con.Open();
 
@@ -139,20 +149,24 @@ namespace senai.peoples.WebApi.Repository
 
                     while (rdr.Read())
                     {
-                        FuncionarioDomain funcionarios= new FuncionarioDomain
+                        FuncionarioDomain funcionario= new FuncionarioDomain
                         {
                             id_funcionario = Convert.ToInt32(rdr[0]),
 
-                            Nome = rdr["Nome"].ToString()
+                            Nome = rdr["Nome"].ToString(),
+
+                            Sobrenome = rdr ["Sobrenome"].ToString(),
                         };
 
-                        funcionario.Add(funcionarios);
+                        funcionarios.Add(funcionario);
                     }
                 }
             }
 
-            return funcionario;
+            return funcionarios;
         }
+
+     
     }
  }
 

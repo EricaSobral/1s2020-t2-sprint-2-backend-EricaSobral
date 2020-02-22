@@ -1,6 +1,6 @@
-CREATE DATABASE M_Peoples
+CREATE DATABASE M_Peoples;
 
-USE M_Peoples
+USE M_Peoples;
 
 CREATE TABLE Funcionario(
 id_funcionario INT IDENTITY PRIMARY KEY,

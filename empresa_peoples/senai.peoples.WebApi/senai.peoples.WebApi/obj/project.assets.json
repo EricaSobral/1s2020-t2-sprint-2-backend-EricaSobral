@@ -12529,23 +12529,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\44994599823\\.nuget\\packages\\": {},
+    "C:\\Users\\erica\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\44994599823\\Desktop\\senai_backend\\empresa_peoples\\senai.peoples.WebApi\\senai.peoples.WebApi\\senai.peoples.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\erica\\Desktop\\1s2020-t2-sprint-2-backend\\empresa_peoples\\senai.peoples.WebApi\\senai.peoples.WebApi\\senai.peoples.WebApi.csproj",
       "projectName": "senai.peoples.WebApi",
-      "projectPath": "C:\\Users\\44994599823\\Desktop\\senai_backend\\empresa_peoples\\senai.peoples.WebApi\\senai.peoples.WebApi\\senai.peoples.WebApi.csproj",
-      "packagesPath": "C:\\Users\\44994599823\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\44994599823\\Desktop\\senai_backend\\empresa_peoples\\senai.peoples.WebApi\\senai.peoples.WebApi\\obj\\",
+      "projectPath": "C:\\Users\\erica\\Desktop\\1s2020-t2-sprint-2-backend\\empresa_peoples\\senai.peoples.WebApi\\senai.peoples.WebApi\\senai.peoples.WebApi.csproj",
+      "packagesPath": "C:\\Users\\erica\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\erica\\Desktop\\1s2020-t2-sprint-2-backend\\empresa_peoples\\senai.peoples.WebApi\\senai.peoples.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\44994599823\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\erica\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
